@@ -4,34 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Saraswathi Traders | Authorized Taro Pumps & Asian Paints Dealer</title>
-<meta name="description" content="Saraswathi Traders is an authorized Taro Pumps and Asian Paints dealer in Tittagudi. We sell motors, water pumps, electrical items, paints, and plumbing materials.">
+<meta name="description" content="Saraswathi Traders is an authorized Taro Pumps and Asian Paints dealer in Tittagudi. Motors, pumps, electricals, paints, plumbing materials since 2013.">
 <meta name="keywords" content="Saraswathi Traders, Tittagudi motors shop, Taro Pumps dealer Tittagudi, Asian Paints dealer Tittagudi, electrical shop, paints shop, plumbing store Cuddalore">
 
 <style>
   /* GLOBAL STYLES */
   body { 
-    margin:0; 
-    font-family:"Segoe UI", Arial, sans-serif; 
-    background:#f0f8ff; 
-    color:#333; 
-    scroll-behavior:smooth;
-    overflow-x:hidden;
+    margin:0; font-family:"Segoe UI", Arial, sans-serif; 
+    background:#f0f8ff; color:#333; scroll-behavior:smooth; overflow-x:hidden; 
   }
   h2 { padding-left:12px; margin-bottom:15px; font-weight:700; background:linear-gradient(to right, #ff5722, #ff9800); -webkit-background-clip:text; color:transparent; }
   a { text-decoration:none; }
 
   .container { 
-    margin:50px auto; 
-    padding:40px; 
-    max-width:1100px; 
-    border-radius:20px; 
-    box-shadow:0 12px 28px rgba(0,0,0,0.15);
-    opacity:0;
-    transform:translateY(40px);
-    transition: all 1s ease;
-    position:relative;
-    overflow:hidden;
-    background:rgba(255,255,255,0.95);
+    margin:50px auto; padding:40px; max-width:1100px; border-radius:20px; 
+    box-shadow:0 12px 28px rgba(0,0,0,0.15); opacity:0; transform:translateY(40px); transition: all 1s ease; 
+    position:relative; overflow:hidden; background:rgba(255,255,255,0.95);
   }
   .container.visible { opacity:1; transform:translateY(0); }
 
@@ -41,7 +29,8 @@
   /* HEADER */
   header { text-align:center; padding:80px 20px; background:linear-gradient(135deg,#ff9800,#ff7043); color:white; position:relative; overflow:hidden; }
   header h1 { font-size:48px; margin:0; letter-spacing:1px; }
-  header p { font-size:22px; margin:15px 0; font-weight:500; }
+  header p { font-size:22px; margin:5px 0; font-weight:500; }
+  header span { display:block; font-size:16px; margin-top:5px; font-style:italic; }
 
   /* Decorative floating circles in header */
   .floating-shape { position:absolute; border-radius:50%; opacity:0.2; animation: float 8s ease-in-out infinite; }
@@ -50,28 +39,17 @@
   .circle3 { width:80px; height:80px; background:#4caf50; bottom:30px; left:20%; animation-delay:1.5s; }
   @keyframes float { 0%,100%{ transform:translateY(0px);} 50%{ transform:translateY(-25px);} }
 
-  header::after { content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:url('') no-repeat center center / cover; opacity:0.05; z-index:0; }
-
-  /* NAVIGATION */
   nav { text-align:center; margin:25px 0; }
 
   /* TESTIMONIALS */
   .testimonial-slider { position: relative; overflow:hidden; height:180px; border-radius:20px; padding:20px; background:linear-gradient(145deg,#fff0e6,#ffe0b2); }
   .testimonial { position:absolute; top:0; left:100%; width:100%; opacity:0; transition: all 0.8s ease; text-align:center; font-size:1.1rem; color:#555; line-height:1.6; }
   .testimonial.active { left:0; opacity:1; }
-  .dots { text-align:center; margin-top:12px; }
-  .dot { display:inline-block; height:12px; width:12px; margin:0 5px; background:#ccc; border-radius:50%; cursor:pointer; transition:0.3s; }
-  .dot.active { background:#ff5722; }
 
   /* GALLERY */
   .gallery-slider { position: relative; overflow:hidden; height:300px; border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,0.1); }
   .gallery-slider img { position:absolute; top:0; left:100%; width:100%; height:100%; object-fit:cover; transition:all 1s ease; border-radius:20px; transform:scale(1); }
   .gallery-slider img.active { left:0; opacity:1; transform:scale(1); }
-
-  /* COLOUR CUBE */
-  .colour-cube-gallery { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:20px; }
-  .colour-cube-gallery img { width:220px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.15); transition: transform 0.5s, box-shadow 0.5s; cursor:pointer; }
-  .colour-cube-gallery img:hover { transform:scale(1.08); box-shadow:0 10px 25px rgba(0,0,0,0.25); }
 
   /* CONTACT BUTTONS */
   .contact-buttons { display:flex; flex-wrap:wrap; gap:12px; margin:20px 0; }
@@ -83,23 +61,18 @@
   .map-btn { background:#ff5722; }
   .insta-btn { background:#e1306c; }
 
-  /* FLOATING BUTTONS */
-  .floating-btn { position:fixed; bottom:20px; width:60px; height:60px; border-radius:50%; color:white; text-align:center; font-size:30px; line-height:60px; z-index:1000; box-shadow:0 6px 16px rgba(0,0,0,0.35); transition: transform 0.3s, box-shadow 0.3s; }
-  .floating-btn:hover { transform:scale(1.15); box-shadow:0 10px 20px rgba(0,0,0,0.4); }
-  .whatsapp-float { background:#25D366; right:20px; }
-  .insta-float { background:#e1306c; right:95px; }
-
   .map-container { margin-top:20px; border-radius:16px; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,0.15); }
+
+  /* FLOATING BUTTON */
+  .floating-btn { position:fixed; bottom:20px; width:60px; height:60px; border-radius:50%; color:white; text-align:center; font-size:30px; line-height:60px; z-index:1000; box-shadow:0 6px 16px rgba(0,0,0,0.35); transition: transform 0.3s, box-shadow 0.3s; cursor:pointer; }
+  .floating-btn:hover { transform:scale(1.15); box-shadow:0 10px 20px rgba(0,0,0,0.4); }
 
   /* RESPONSIVE */
   @media (max-width:768px){
     header h1 { font-size:32px; }
     nav a { display:inline-block; margin:8px; font-size:15px; }
     .contact-btn { flex:1 1 100%; font-size:0.95rem; }
-    .floating-btn { width:50px; height:50px; font-size:24px; line-height:50px; }
-    .insta-float { right:80px; }
     .gallery-slider { height:200px; }
-    .colour-cube-gallery img { width:100%; max-width:150px; }
   }
 </style>
 </head>
@@ -107,6 +80,7 @@
 
 <header>
   <h1>Saraswathi Traders</h1>
+  <span>Since 2013</span>
   <p>Your Trusted Electricals, Paints, Motors & Plumbing Store – Tittagudi</p>
   <div class="floating-shape circle1"></div>
   <div class="floating-shape circle2"></div>
@@ -117,7 +91,6 @@
   <a href="#about">About</a>
   <a href="#services">Services</a>
   <a href="#products">Products</a>
-  <a href="#colour-cube">Colour Cube</a>
   <a href="#gallery">Gallery</a>
   <a href="#testimonials">Testimonials</a>
   <a href="#contact">Contact</a>
@@ -126,7 +99,13 @@
 <!-- ABOUT -->
 <div class="container" id="about">
   <h2>About Us</h2>
-  <p><strong>Saraswathi Traders</strong> is an authorized <strong>Taro Pumps</strong> and <strong>Asian Paints</strong> dealer in Tittagudi. We specialize in motors, water pumps, electrical items, Asian Paints, painting services, and plumbing materials. Located in Vasistapuram, we serve customers across Tittagudi Taluk and nearby areas in Cuddalore district with genuine products, quality workmanship, and expert guidance.</p>
+  <p><strong>Saraswathi Traders</strong> is an authorized <strong>Taro Pumps</strong> and <strong>Asian Paints</strong> dealer in Tittagudi. We specialize in:</p>
+  <ul>
+    <li><strong>Asian Paints:</strong> New home painting, rework services, easy Colour Cube selection, vibrant & durable paints for home & commercial projects.</li>
+    <li><strong>Motors:</strong> High-quality Taro Motors & Pumps for home and commercial needs, expert guidance for selection & installation.</li>
+    <li><strong>Electricals:</strong> Philips and other branded electrical items – switches, wires, lights, MCBs, and DB boxes.</li>
+    <li><strong>Plumbing:</strong> Pipes, fittings & accessories with reliable service and genuine products.</li>
+  </ul>
 </div>
 
 <!-- SERVICES -->
@@ -147,25 +126,13 @@
 <div class="container" id="products">
   <h2>Our Products</h2>
   <ul>
-    <li>Asian Paints</li>
-    <li>Taro Pumps</li>
+    <li>Asian Paints – Colour Cubes & Paints</li>
+    <li>Taro Pumps & Motors</li>
     <li>Philips Lights & Electricals</li>
     <li>Switches, Wires, MCBs & DB Boxes</li>
     <li>Plumbing Pipes & Fittings</li>
     <li>Hardware & Household Items</li>
   </ul>
-</div>
-
-<!-- COLOUR CUBE -->
-<div class="container" id="colour-cube">
-  <h2>Asian Paints Colour Cube</h2>
-  <p>Explore a wide range of colors with <strong>Asian Paints Colour Cube</strong> at Saraswathi Traders. Perfect for home and commercial spaces, it offers vibrant, durable, and high-quality paints.</p>
-  <div class="colour-cube-gallery">
-    <img src="colour-cube-1.jpg" alt="Colour Cube 1">
-    <img src="colour-cube-2.jpg" alt="Colour Cube 2">
-    <img src="colour-cube-3.jpg" alt="Colour Cube 3">
-  </div>
-  <p><strong>Authorized Asian Paints Dealer – Tittagudi</strong></p>
 </div>
 
 <!-- GALLERY -->
@@ -182,42 +149,32 @@
 <!-- TESTIMONIALS -->
 <div class="container" id="testimonials">
   <h2>Customer Testimonials</h2>
-  <div class="testimonial-slider">
+  <div class="testimonial-slider" id="testimonial-slider">
     <div class="testimonial active">⭐️⭐️⭐️⭐️⭐️ "Best place in Tittagudi for motors and pumps. Genuine products and excellent guidance."</div>
     <div class="testimonial">⭐️⭐️⭐️⭐️⭐️ "Authorized Taro Pumps dealer. Very trustworthy shop."</div>
     <div class="testimonial">⭐️⭐️⭐️⭐️⭐️ "Authorized Asian Paints dealer. High-quality paints and great painting services."</div>
     <div class="testimonial">⭐️⭐️⭐️⭐️⭐️ "Excellent electrical products and fittings. Friendly and knowledgeable staff."</div>
-    <div class="dots">
-      <span class="dot active" onclick="currentTestimonial(0)"></span>
-      <span class="dot" onclick="currentTestimonial(1)"></span>
-      <span class="dot" onclick="currentTestimonial(2)"></span>
-      <span class="dot" onclick="currentTestimonial(3)"></span>
-    </div>
   </div>
 </div>
 
 <!-- CONTACT -->
 <div class="container" id="contact">
   <h2>Contact Us</h2>
-  <p><strong>Address:</strong><br>94, Main Road, Vasistapuram,<br>Tittagudi Taluk,<br>Tittagudi – 606106,<br>Tamil Nadu, India.</p>
+  <p><strong>Address:</strong><br>94, Main Road, Vasistapuram,<br>Tittagudi Taluk, Tittagudi – 606106, Tamil Nadu, India.</p>
   <p><strong>Phone:</strong> +91 9443562832</p>
   <div class="contact-buttons">
     <a href="tel:+919443562832" class="contact-btn call-btn">📞 Call Now</a>
-    <a href="https://wa.me/919443562832?text=Hello Saraswathi Traders" target="_blank" class="contact-btn whatsapp-btn">💬 WhatsApp</a>
     <a href="mailto:venusekar64@gmail.com" class="contact-btn email-btn">✉️ Email</a>
     <a href="https://maps.app.goo.gl/JvvohCbMNmX9xjoX9" target="_blank" class="contact-btn map-btn">🗺️ Maps</a>
-    <a href="https://www.instagram.com/saraswathi_traders_tittagudi?igsh=Ymo2ZXllb3A2cjM1" target="_blank" class="contact-btn insta-btn">📸 Instagram</a>
+    <a href="https://www.instagram.com/saraswathi_traders_tittagudi" target="_blank" class="contact-btn insta-btn">📸 Instagram</a>
   </div>
   <div class="map-container">
-    <iframe src="https://www.google.com/maps?q=JvvohCbMNmX9xjoX9&output=embed" width="100%" height="300" style="border:0;border-radius:16px;" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps?q=94+Main+Road,+Vasistapuram,+Tittagudi,+Tamil+Nadu&output=embed" width="100%" height="300" style="border:0;border-radius:16px;" loading="lazy"></iframe>
   </div>
 </div>
 
-<!-- FLOATING BUTTONS -->
-<a href="https://wa.me/919443562832?text=Hello Saraswathi Traders" target="_blank" class="floating-btn whatsapp-float">💬</a>
-<a href="https://www.instagram.com/saraswathi_traders_tittagudi?igsh=Ymo2ZXllb3A2cjM1" target="_blank" class="floating-btn insta-float">📸</a>
-
-<footer style="text-align:center; padding:20px; background:linear-gradient(135deg,#ff9800,#ff7043); color:white; font-weight:bold; border-top-left-radius:25px; border-top-right-radius:25px;">© 2025 Saraswathi Traders, Tittagudi</footer>
+<!-- FLOATING CHAT BUTTON -->
+<div class="floating-btn whatsapp-float" onclick="openChat()">💬</div>
 
 <script>
   // Reveal sections on scroll
@@ -233,21 +190,35 @@
   revealSection();
 
   // Testimonials carousel
-  const testimonials = document.querySelectorAll('.testimonial');
-  const dots = document.querySelectorAll('.dot');
-  let tIndex = 0;
+  const testimonials=document.querySelectorAll('.testimonial');
+  let tIndex=0;
+  let tInterval;
   function showTestimonial(index){
-    testimonials.forEach((t,i)=>{ t.classList.remove('active'); dots[i].classList.remove('active'); if(i===index){t.classList.add('active'); dots[i].classList.add('active');}});
+    testimonials.forEach((t,i)=>t.classList.remove('active'));
+    testimonials[index].classList.add('active');
     tIndex=index;
   }
-  function currentTestimonial(index){ showTestimonial(index); }
-  setInterval(()=>{ tIndex=(tIndex+1)%testimonials.length; showTestimonial(tIndex); },5000);
+  function nextTestimonial(){ tIndex=(tIndex+1)%testimonials.length; showTestimonial(tIndex);}
+  tInterval=setInterval(nextTestimonial,5000);
+  // Pause on hover
+  const tSlider=document.getElementById('testimonial-slider');
+  tSlider.addEventListener('mouseenter',()=>clearInterval(tInterval));
+  tSlider.addEventListener('mouseleave',()=>tInterval=setInterval(nextTestimonial,5000));
 
   // Gallery carousel
   const gallerySlides=document.querySelectorAll('.gallery-slide');
   let gIndex=0;
-  function showGallery(index){ gallerySlides.forEach((slide,i)=>{ slide.classList.remove('active'); if(i===index) slide.classList.add('active'); }); gIndex=index; }
+  function showGallery(index){ gallerySlides.forEach((s,i)=>s.classList.remove('active')); gallerySlides[index].classList.add('active'); gIndex=index; }
   setInterval(()=>{ gIndex=(gIndex+1)%gallerySlides.length; showGallery(gIndex); },5000);
+
+  // Floating chat button
+  function openChat(){
+    let option=prompt("Which product/service would you like to enquire about?\nOptions: Motor, Paint, Electrical, Plumbing\n(Leave blank for general enquiry)");
+    let msg="Hello Saraswathi Traders, I would like to enquire about ";
+    if(option){ msg+=option; } else { msg+="your shop and services"; }
+    window.open("https://wa.me/919443562832?text="+encodeURIComponent(msg),"_blank");
+  }
 </script>
+
 </body>
 </html>
