@@ -3,221 +3,271 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Saraswathi Traders | Authorized Taro Pumps & Asian Paints Dealer</title>
-<meta name="description" content="Saraswathi Traders is an authorized Taro Pumps and Asian Paints dealer in Tittagudi. Motors, pumps, electricals, paints, plumbing materials since 2013.">
-<meta name="keywords" content="Saraswathi Traders, Tittagudi motors shop, Taro Pumps dealer Tittagudi, Asian Paints dealer Tittagudi, electrical shop, paints shop, plumbing store Cuddalore">
+
+<title>Saraswathi Traders | Authorized Taro Pumps & Asian Paints Dealer – Tittagudi</title>
+
+<meta name="description" content="Saraswathi Traders since 2013. Authorized dealer for Taro Pumps, Asian Paints Easy Colour, Philips, Finolex, GM, Legrand, Ashirvad & Bandham HDPE pipes in Tittagudi.">
+
+<!-- SEO BRAND SCHEMA -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Store",
+"name": "Saraswathi Traders",
+"foundingDate": "2013",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "94, Main Road, Vasistapuram",
+"addressLocality": "Tittagudi",
+"postalCode": "606106",
+"addressRegion": "TN",
+"addressCountry": "IN"
+},
+"brand": [
+{"@type":"Brand","name":"Asian Paints"},
+{"@type":"Brand","name":"Taro Pumps"},
+{"@type":"Brand","name":"Philips"},
+{"@type":"Brand","name":"Finolex"},
+{"@type":"Brand","name":"GM Modular"},
+{"@type":"Brand","name":"Legrand"},
+{"@type":"Brand","name":"Ashirvad Pipes"},
+{"@type":"Brand","name":"Bandham HDPE Pipes"}
+]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-  /* GLOBAL STYLES */
-  body { 
-    margin:0; font-family:"Segoe UI", Arial, sans-serif; 
-    background:#f0f8ff; color:#333; scroll-behavior:smooth; overflow-x:hidden; 
-  }
-  h2 { padding-left:12px; margin-bottom:15px; font-weight:700; background:linear-gradient(to right, #ff5722, #ff9800); -webkit-background-clip:text; color:transparent; }
-  a { text-decoration:none; }
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#fff7e6,#ffffff,#eef6ff);
+color:#333;
+scroll-behavior:smooth;
+}
+header{
+text-align:center;
+padding:60px 20px;
+}
+header h1{
+font-size:48px;
+background:linear-gradient(90deg,#ff9800,#e65100);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+header p{font-size:18px}
+.badge{
+display:inline-block;
+margin-top:15px;
+padding:8px 20px;
+background:#25D366;
+color:white;
+border-radius:30px;
+font-weight:600;
+animation:pulse 2s infinite;
+}
+@keyframes pulse{
+0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}
+70%{box-shadow:0 0 0 15px rgba(37,211,102,0)}
+100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}
+}
+.container{
+max-width:1100px;
+margin:70px auto;
+padding:0 20px;
+}
+h2{
+font-size:36px;
+background:linear-gradient(90deg,#1976d2,#42a5f5);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+p,li{font-size:17px;line-height:1.7}
+.highlight{color:#e65100;font-weight:600}
 
-  .container { 
-    margin:50px auto; padding:40px; max-width:1100px; border-radius:20px; 
-    box-shadow:0 12px 28px rgba(0,0,0,0.15); opacity:0; transform:translateY(40px); transition: all 1s ease; 
-    position:relative; overflow:hidden; background:rgba(255,255,255,0.95);
-  }
-  .container.visible { opacity:1; transform:translateY(0); }
+/* BRAND SLIDER */
+.brand-slider{
+display:flex;
+gap:20px;
+overflow-x:auto;
+scroll-snap-type:x mandatory;
+padding:20px 0;
+}
+.brand-card{
+min-width:220px;
+background:white;
+border-radius:18px;
+padding:18px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+scroll-snap-align:start;
+opacity:0;
+transform:translateY(30px);
+transition:.6s;
+cursor:pointer;
+}
+.brand-card.visible{
+opacity:1;
+transform:none;
+}
+.brand-card:hover{
+transform:translateY(-8px) scale(1.05);
+}
+.brand-card img{
+max-width:120px;
+height:60px;
+object-fit:contain;
+}
+.brand-card p{font-weight:600}
 
-  nav a { margin:0 15px; font-size:16px; color:#ff5722; font-weight:bold; transition:0.3s; }
-  nav a:hover { color:#1976d2; }
+/* TESTIMONIALS */
+.testimonial{
+background:white;
+padding:20px;
+border-radius:16px;
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+min-width:280px;
+}
 
-  /* HEADER */
-  header { text-align:center; padding:80px 20px; background:linear-gradient(135deg,#ff9800,#ff7043); color:white; position:relative; overflow:hidden; }
-  header h1 { font-size:48px; margin:0; letter-spacing:1px; }
-  header p { font-size:22px; margin:5px 0; font-weight:500; }
-  header span { display:block; font-size:16px; margin-top:5px; font-style:italic; }
-
-  /* Decorative floating circles in header */
-  .floating-shape { position:absolute; border-radius:50%; opacity:0.2; animation: float 8s ease-in-out infinite; }
-  .circle1 { width:120px; height:120px; background:#ffeb3b; top:20px; left:10%; }
-  .circle2 { width:200px; height:200px; background:#ff5722; top:50px; right:5%; animation-delay:3s;}
-  .circle3 { width:80px; height:80px; background:#4caf50; bottom:30px; left:20%; animation-delay:1.5s; }
-  @keyframes float { 0%,100%{ transform:translateY(0px);} 50%{ transform:translateY(-25px);} }
-
-  nav { text-align:center; margin:25px 0; }
-
-  /* TESTIMONIALS */
-  .testimonial-slider { position: relative; overflow:hidden; height:180px; border-radius:20px; padding:20px; background:linear-gradient(145deg,#fff0e6,#ffe0b2); }
-  .testimonial { position:absolute; top:0; left:100%; width:100%; opacity:0; transition: all 0.8s ease; text-align:center; font-size:1.1rem; color:#555; line-height:1.6; }
-  .testimonial.active { left:0; opacity:1; }
-
-  /* GALLERY */
-  .gallery-slider { position: relative; overflow:hidden; height:300px; border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,0.1); }
-  .gallery-slider img { position:absolute; top:0; left:100%; width:100%; height:100%; object-fit:cover; transition:all 1s ease; border-radius:20px; transform:scale(1); }
-  .gallery-slider img.active { left:0; opacity:1; transform:scale(1); }
-
-  /* CONTACT BUTTONS */
-  .contact-buttons { display:flex; flex-wrap:wrap; gap:12px; margin:20px 0; }
-  .contact-btn { flex:1 1 calc(33% - 12px); text-align:center; padding:14px 18px; border-radius:14px; font-weight:bold; color:white; font-size:1rem; transition: transform 0.3s, box-shadow 0.3s; }
-  .contact-btn:hover { transform:scale(1.07); box-shadow:0 6px 15px rgba(0,0,0,0.25); }
-  .call-btn { background:#1976d2; }
-  .whatsapp-btn { background:#25D366; }
-  .email-btn { background:#607d8b; }
-  .map-btn { background:#ff5722; }
-  .insta-btn { background:#e1306c; }
-
-  .map-container { margin-top:20px; border-radius:16px; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,0.15); }
-
-  /* FLOATING BUTTON */
-  .floating-btn { position:fixed; bottom:20px; width:60px; height:60px; border-radius:50%; color:white; text-align:center; font-size:30px; line-height:60px; z-index:1000; box-shadow:0 6px 16px rgba(0,0,0,0.35); transition: transform 0.3s, box-shadow 0.3s; cursor:pointer; }
-  .floating-btn:hover { transform:scale(1.15); box-shadow:0 10px 20px rgba(0,0,0,0.4); }
-
-  /* RESPONSIVE */
-  @media (max-width:768px){
-    header h1 { font-size:32px; }
-    nav a { display:inline-block; margin:8px; font-size:15px; }
-    .contact-btn { flex:1 1 100%; font-size:0.95rem; }
-    .gallery-slider { height:200px; }
-  }
+/* CHAT */
+.chat-widget{
+position:fixed;
+right:20px;
+bottom:25px;
+background:#25D366;
+color:white;
+padding:14px 18px;
+border-radius:50px;
+cursor:pointer;
+z-index:999;
+font-weight:600;
+box-shadow:0 12px 28px rgba(0,0,0,.35);
+}
+@media(max-width:768px){
+.chat-widget span{display:none}
+.chat-widget{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+}
+footer{
+background:#0d47a1;
+color:white;
+text-align:center;
+padding:30px;
+}
 </style>
 </head>
+
 <body>
 
 <header>
-  <h1>Saraswathi Traders</h1>
-  <span>Since 2013</span>
-  <p>Your Trusted Electricals, Paints, Motors & Plumbing Store – Tittagudi</p>
-  <div class="floating-shape circle1"></div>
-  <div class="floating-shape circle2"></div>
-  <div class="floating-shape circle3"></div>
+<h1>Saraswathi Traders</h1>
+<p>Authorized Taro Pumps & Asian Paints Dealer – Tittagudi</p>
+<div class="badge">Serving Since 2013</div>
 </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#products">Products</a>
-  <a href="#gallery">Gallery</a>
-  <a href="#testimonials">Testimonials</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<!-- ABOUT -->
-<div class="container" id="about">
-  <h2>About Us</h2>
-  <p><strong>Saraswathi Traders</strong> is an authorized <strong>Taro Pumps</strong> and <strong>Asian Paints</strong> dealer in Tittagudi. We specialize in:</p>
-  <ul>
-    <li><strong>Asian Paints:</strong> New home painting, rework services, easy Colour Cube selection, vibrant & durable paints for home & commercial projects.</li>
-    <li><strong>Motors:</strong> High-quality Taro Motors & Pumps for home and commercial needs, expert guidance for selection & installation.</li>
-    <li><strong>Electricals:</strong> Philips and other branded electrical items – switches, wires, lights, MCBs, and DB boxes.</li>
-    <li><strong>Plumbing:</strong> Pipes, fittings & accessories with reliable service and genuine products.</li>
-  </ul>
+<div class="container">
+<h2>About Us</h2>
+<p>
+<strong class="highlight">Saraswathi Traders</strong> has been a trusted name in
+Tittagudi since 2013, offering premium-quality products for
+<strong>homes, agriculture, and commercial projects</strong>.
+</p>
+<p>
+We are an <strong class="highlight">Authorized Taro Pumps dealer</strong> and
+<strong class="highlight">Asian Paints Easy Colour & Colour Cube dealer</strong>,
+along with leading electrical and plumbing brands.
+</p>
+<p>
+Whether you are building a new home, renovating, or upgrading agricultural
+infrastructure, we provide <strong>genuine products, expert guidance, and
+reliable after-sales support</strong>.
+</p>
 </div>
 
-<!-- SERVICES -->
-<div class="container" id="services">
-  <h2>Our Services</h2>
-  <ul>
-    <li>✔ Motors & Water Pump Sales</li>
-    <li>✔ Authorized Taro Pumps Dealer</li>
-    <li>✔ Electrical Items & Fittings</li>
-    <li>✔ Asian Paints (Authorized Dealer)</li>
-    <li>✔ Painting Services (Home & Commercial)</li>
-    <li>✔ Plumbing Pipes & Accessories</li>
-    <li>✔ Expert Guidance & Genuine Products</li>
-  </ul>
+<div class="container">
+<h2>Our Products & Trusted Brands</h2>
+
+<div class="brand-slider" id="brands">
+
+<div class="brand-card" onclick="brandChat('Asian Paints')">
+<img src="asian-paints-logo.png">
+<p>Asian Paints<br><small>Easy Colour • Colour Cube</small></p>
 </div>
 
-<!-- PRODUCTS -->
-<div class="container" id="products">
-  <h2>Our Products</h2>
-  <ul>
-    <li>Asian Paints – Colour Cubes & Paints</li>
-    <li>Taro Pumps & Motors</li>
-    <li>Philips Lights & Electricals</li>
-    <li>Switches, Wires, MCBs & DB Boxes</li>
-    <li>Plumbing Pipes & Fittings</li>
-    <li>Hardware & Household Items</li>
-  </ul>
+<div class="brand-card" onclick="brandChat('Taro Pumps')">
+<img src="taro-logo.png">
+<p>Taro Pumps<br><small>Motors & Pumps</small></p>
 </div>
 
-<!-- GALLERY -->
-<div class="container" id="gallery">
-  <h2>Gallery</h2>
-  <p>Authorized Taro Pumps & Asian Paints Dealer – Tittagudi</p>
-  <div class="gallery-slider">
-    <img src="taro-pumps-saraswathi-traders-launch-1.jpg" class="gallery-slide active">
-    <img src="taro-pumps-saraswathi-traders-launch-2.jpg" class="gallery-slide">
-    <img src="taro-pumps-saraswathi-traders-launch-3.jpg" class="gallery-slide">
-  </div>
+<div class="brand-card" onclick="brandChat('Philips Lighting')">
+<img src="philips-logo.png">
+<p>Philips<br><small>LED Lighting</small></p>
 </div>
 
-<!-- TESTIMONIALS -->
-<div class="container" id="testimonials">
-  <h2>Customer Testimonials</h2>
-  <div class="testimonial-slider" id="testimonial-slider">
-    <div class="testimonial active">⭐️⭐️⭐️⭐️⭐️ "Best place in Tittagudi for motors and pumps. Genuine products and excellent guidance."</div>
-    <div class="testimonial">⭐️⭐️⭐️⭐️⭐️ "Authorized Taro Pumps dealer. Very trustworthy shop."</div>
-    <div class="testimonial">⭐️⭐️⭐️⭐️⭐️ "Authorized Asian Paints dealer. High-quality paints and great painting services."</div>
-    <div class="testimonial">⭐️⭐️⭐️⭐️⭐️ "Excellent electrical products and fittings. Friendly and knowledgeable staff."</div>
-  </div>
+<div class="brand-card" onclick="brandChat('Finolex')">
+<img src="finolex-logo.png">
+<p>Finolex<br><small>Wires & Cables</small></p>
 </div>
 
-<!-- CONTACT -->
-<div class="container" id="contact">
-  <h2>Contact Us</h2>
-  <p><strong>Address:</strong><br>94, Main Road, Vasistapuram,<br>Tittagudi Taluk, Tittagudi – 606106, Tamil Nadu, India.</p>
-  <p><strong>Phone:</strong> +91 9443562832</p>
-  <div class="contact-buttons">
-    <a href="tel:+919443562832" class="contact-btn call-btn">📞 Call Now</a>
-    <a href="mailto:venusekar64@gmail.com" class="contact-btn email-btn">✉️ Email</a>
-    <a href="https://maps.app.goo.gl/JvvohCbMNmX9xjoX9" target="_blank" class="contact-btn map-btn">🗺️ Maps</a>
-    <a href="https://www.instagram.com/saraswathi_traders_tittagudi" target="_blank" class="contact-btn insta-btn">📸 Instagram</a>
-  </div>
-  <div class="map-container">
-    <iframe src="https://www.google.com/maps?q=94+Main+Road,+Vasistapuram,+Tittagudi,+Tamil+Nadu&output=embed" width="100%" height="300" style="border:0;border-radius:16px;" loading="lazy"></iframe>
-  </div>
+<div class="brand-card" onclick="brandChat('GM Modular')">
+<img src="gm-logo.png">
+<p>GM Modular<br><small>Switches</small></p>
 </div>
 
-<!-- FLOATING CHAT BUTTON -->
-<div class="floating-btn whatsapp-float" onclick="openChat()">💬</div>
+<div class="brand-card" onclick="brandChat('Legrand')">
+<img src="legrand-logo.png">
+<p>Legrand<br><small>Electrical Solutions</small></p>
+</div>
+
+<div class="brand-card" onclick="brandChat('Ashirvad Pipes')">
+<img src="ashirvad-logo.png">
+<p>Ashirvad Pipes<br><small>CPVC • UPVC • Column</small></p>
+</div>
+
+<div class="brand-card" onclick="brandChat('Bandham HDPE Pipes')">
+<img src="bandham-logo.png">
+<p>Bandham<br><small>HDPE Pipes</small></p>
+</div>
+
+</div>
+</div>
+
+<div class="container">
+<h2>Customer Testimonials</h2>
+<div class="brand-slider">
+<div class="testimonial">⭐️⭐️⭐️⭐️⭐️ Best place for Taro motors and pumps.</div>
+<div class="testimonial">⭐️⭐️⭐️⭐️⭐️ Asian Paints Colour Cube helped us choose perfect colours.</div>
+<div class="testimonial">⭐️⭐️⭐️⭐️⭐️ Genuine Finolex wires and GM switches.</div>
+<div class="testimonial">⭐️⭐️⭐️⭐️⭐️ Trusted plumbing brands like Ashirvad & Bandham.</div>
+</div>
+</div>
+
+<footer>
+© 2025 Saraswathi Traders | Since 2013
+</footer>
+
+<div class="chat-widget" onclick="openChat()">💬 Chat</div>
 
 <script>
-  // Reveal sections on scroll
-  const containers=document.querySelectorAll('.container');
-  const revealSection = () => {
-    const triggerBottom = window.innerHeight*0.85;
-    containers.forEach(c=>{
-      const top=c.getBoundingClientRect().top;
-      if(top<triggerBottom){c.classList.add('visible');}
-    });
-  };
-  window.addEventListener('scroll',revealSection);
-  revealSection();
+function openChat(){
+let msg="Hello Saraswathi Traders, I would like to know more about your products.";
+window.location.href="https://wa.me/919443562832?text="+encodeURIComponent(msg);
+}
+function brandChat(brand){
+let msg="Hello Saraswathi Traders, I would like to enquire about "+brand+".";
+window.location.href="https://wa.me/919443562832?text="+encodeURIComponent(msg);
+}
 
-  // Testimonials carousel
-  const testimonials=document.querySelectorAll('.testimonial');
-  let tIndex=0;
-  let tInterval;
-  function showTestimonial(index){
-    testimonials.forEach((t,i)=>t.classList.remove('active'));
-    testimonials[index].classList.add('active');
-    tIndex=index;
-  }
-  function nextTestimonial(){ tIndex=(tIndex+1)%testimonials.length; showTestimonial(tIndex);}
-  tInterval=setInterval(nextTestimonial,5000);
-  // Pause on hover
-  const tSlider=document.getElementById('testimonial-slider');
-  tSlider.addEventListener('mouseenter',()=>clearInterval(tInterval));
-  tSlider.addEventListener('mouseleave',()=>tInterval=setInterval(nextTestimonial,5000));
+/* Fade-in on scroll */
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})
+},{threshold:0.2});
+document.querySelectorAll('.brand-card').forEach(el=>observer.observe(el));
 
-  // Gallery carousel
-  const gallerySlides=document.querySelectorAll('.gallery-slide');
-  let gIndex=0;
-  function showGallery(index){ gallerySlides.forEach((s,i)=>s.classList.remove('active')); gallerySlides[index].classList.add('active'); gIndex=index; }
-  setInterval(()=>{ gIndex=(gIndex+1)%gallerySlides.length; showGallery(gIndex); },5000);
-
-  // Floating chat button
-  function openChat(){
-    let option=prompt("Which product/service would you like to enquire about?\nOptions: Motor, Paint, Electrical, Plumbing\n(Leave blank for general enquiry)");
-    let msg="Hello Saraswathi Traders, I would like to enquire about ";
-    if(option){ msg+=option; } else { msg+="your shop and services"; }
-    window.open("https://wa.me/919443562832?text="+encodeURIComponent(msg),"_blank");
-  }
+/* Auto-scroll */
+setInterval(()=>{
+document.getElementById('brands').scrollBy({left:260,behavior:'smooth'})
+},5000);
 </script>
 
 </body>
