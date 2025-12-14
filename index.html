@@ -6,34 +6,240 @@
 <title>Saraswathi Traders | Authorized Taro Pumps & Asian Paints Dealer</title>
 
 <style>
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f7f7f7;color:#222}
-header{background:#0a3d62;color:#fff;padding:20px;text-align:center}
-section,.container{padding:30px 20px}
-h2{text-align:center;margin-bottom:20px}
-.brand-slider,.gallery-slider,.testimonial-slider{display:flex;gap:20px;overflow-x:auto;scroll-behavior:smooth}
-.brand-card,.gallery-item,.testimonial{min-width:280px;background:#fff;padding:15px;border-radius:10px;text-align:center;box-shadow:0 4px 10px rgba(0,0,0,.1)}
-.brand-card img,.gallery-item img{max-width:100%;border-radius:8px}
-.products div{margin-bottom:15px}
-.btn{display:inline-block;margin:6px;padding:10px 16px;border-radius:25px;background:#25D366;color:#fff;text-decoration:none}
-.btn.call{background:#0a3d62}
-.map iframe{width:100%;height:300px;border:0;border-radius:10px}
-.float-whatsapp{
-position:fixed;bottom:20px;right:20px;
-background:#25D366;color:#fff;
-width:60px;height:60px;
-display:flex;align-items:center;justify-content:center;
-border-radius:50%;font-size:30px;text-decoration:none;
-box-shadow:0 4px 10px rgba(0,0,0,.3);z-index:999
+:root{
+  --primary:#0a3d62;
+  --accent:#ff9f1a;
+  --bg:#f4f6f8;
+  --card:#ffffff;
+  --text:#1f2933;
+  --muted:#6b7280;
+  --radius:18px;
+  --shadow:0 12px 30px rgba(0,0,0,.08);
 }
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:'Poppins',system-ui,-apple-system,BlinkMacSystemFont;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg,#0a3d62,#09365a);
+  color:#fff;
+  padding:70px 20px 60px;
+  text-align:center;
+}
+
+header h1{
+  margin:0;
+  font-size:48px;
+  letter-spacing:.5px;
+}
+
+header p{
+  margin:6px 0;
+  font-size:18px;
+  opacity:.95;
+}
+
+/* LANGUAGE TOGGLE */
 .lang-toggle{
-position:fixed;top:15px;right:15px;
-background:#fff;padding:8px 14px;
-border-radius:20px;
-box-shadow:0 4px 10px rgba(0,0,0,.2);
-font-weight:bold;cursor:pointer;z-index:999
+  position:fixed;
+  top:20px;
+  right:20px;
+  background:#fff;
+  color:#000;
+  padding:10px 18px;
+  border-radius:999px;
+  font-weight:600;
+  font-size:14px;
+  box-shadow:var(--shadow);
+  cursor:pointer;
+  z-index:1000;
+}
+
+/* SECTIONS */
+section,.container{
+  max-width:1200px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+h2{
+  text-align:center;
+  font-size:36px;
+  margin-bottom:30px;
+  position:relative;
+}
+
+h2::after{
+  content:'';
+  width:70px;
+  height:4px;
+  background:var(--accent);
+  display:block;
+  margin:12px auto 0;
+  border-radius:10px;
+}
+
+p{
+  font-size:17px;
+  color:#374151;
+}
+
+/* PRODUCT LIST */
+.products div{
+  background:var(--card);
+  padding:25px 30px;
+  margin-bottom:20px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+
+.products strong{
+  display:block;
+  font-size:20px;
+  margin-bottom:6px;
+  color:var(--primary);
+}
+
+/* SLIDERS */
+.gallery-slider,
+.brand-slider,
+.testimonial-slider{
+  display:flex;
+  gap:24px;
+  overflow-x:auto;
+  padding-bottom:10px;
+  scroll-behavior:smooth;
+}
+
+.gallery-item,
+.brand-card,
+.testimonial{
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:18px;
+  min-width:300px;
+  text-align:center;
+}
+
+.gallery-item img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:14px;
+}
+
+.brand-card img{
+  max-width:140px;
+  height:70px;
+  object-fit:contain;
+  margin-bottom:10px;
+}
+
+.brand-card p{
+  font-weight:600;
+  color:#111;
+}
+
+.testimonial{
+  font-size:16px;
+  font-weight:500;
+  color:#111;
+}
+
+/* CONTACT */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin:10px 8px 0 0;
+  padding:12px 22px;
+  border-radius:999px;
+  font-weight:600;
+  text-decoration:none;
+  transition:.25s;
+}
+
+.btn.call{
+  background:var(--primary);
+  color:#fff;
+}
+
+.btn{
+  background:#25D366;
+  color:#fff;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.map iframe{
+  margin-top:25px;
+  width:100%;
+  height:320px;
+  border-radius:var(--radius);
+  border:none;
+}
+
+/* FLOATING WHATSAPP */
+.float-whatsapp{
+  position:fixed;
+  bottom:24px;
+  right:24px;
+  width:64px;
+  height:64px;
+  background:#25D366;
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:30px;
+  box-shadow:0 12px 30px rgba(0,0,0,.3);
+  z-index:1000;
+  transition:.25s;
+}
+
+.float-whatsapp:hover{
+  transform:scale(1.08);
+}
+
+/* SCROLLBAR CLEANUP */
+.gallery-slider::-webkit-scrollbar,
+.brand-slider::-webkit-scrollbar,
+.testimonial-slider::-webkit-scrollbar{
+  height:6px;
+}
+
+.gallery-slider::-webkit-scrollbar-thumb,
+.brand-slider::-webkit-scrollbar-thumb,
+.testimonial-slider::-webkit-scrollbar-thumb{
+  background:#cbd5e1;
+  border-radius:10px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  header h1{font-size:36px}
+  h2{font-size:28px}
+  .gallery-item,
+  .brand-card,
+  .testimonial{min-width:260px}
 }
 .ta{display:none}
 </style>
+
+  
 </head>
 
 <body>
