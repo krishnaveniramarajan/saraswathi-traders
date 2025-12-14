@@ -258,5 +258,19 @@ autoSlide('brands');
 autoSlide('testimonials');
 </script>
 
+  <script>
+// Check URL param
+const urlParams = new URLSearchParams(window.location.search);
+if(urlParams.get('lang') === 'ta'){
+  // Activate Tamil view
+  document.querySelectorAll('.en').forEach(e => e.style.display = 'none');
+  document.querySelectorAll('.ta').forEach(e => e.style.display = 'block');
+  document.querySelectorAll('.lang-toggle button').forEach(b => b.classList.remove('active'));
+  const taBtn = document.querySelector('.lang-toggle button[onclick*="ta"]');
+  if(taBtn) taBtn.classList.add('active');
+}
+</script>
+
+
 </body>
 </html>
