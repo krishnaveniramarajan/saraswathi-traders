@@ -195,6 +195,12 @@ function paintEnquiry(){
   const msg = "Hello Saraswathi Traders, I would like to enquire about Asian Paints home painting and colour solutions.";
   window.location.href = "https://wa.me/919943562832?text=" + encodeURIComponent(msg);
 }
+
+// Auto-activate Tamil if ?lang=ta
+const urlParams = new URLSearchParams(window.location.search);
+if(urlParams.get('lang') === 'ta'){
+  showLang('ta');
+}
 </script>
 
 </body>
