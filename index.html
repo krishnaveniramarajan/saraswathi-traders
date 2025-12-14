@@ -3,31 +3,227 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Saraswathi Traders | Electricals, Hardwares & Paints</title>
+
+<title>Saraswathi Traders | Electricals & Hardwares – Tittagudi</title>
+<meta name="description" content="Saraswathi Traders since 2013. Electricals & Hardwares, Motors, Water Pumps, Asian Paints, Plumbing materials in Tittagudi.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#fff7e6,#ffffff,#eef6ff);
+color:#333;
+scroll-behavior:smooth;
+}
+header{text-align:center;padding:50px 20px 30px;}
+header h1{
+font-size:48px;
+background:linear-gradient(90deg,#ff9800,#e65100);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+margin-bottom:10px;
+}
+header p{font-size:18px;margin:5px 0;}
+.badge{display:inline-block;margin-top:10px;padding:10px 25px;background:#25D366;color:white;border-radius:30px;font-weight:600;}
+
+.lang-toggle{position:absolute;right:20px;top:20px;background:white;border-radius:20px;box-shadow:0 6px 15px rgba(0,0,0,.2);}
+.lang-toggle button{border:none;background:none;padding:8px 14px;font-weight:600;cursor:pointer;}
+.lang-toggle button.active{background:#1976d2;color:white}
+
+.container{max-width:1100px;margin:30px auto;padding:0 20px;}
+h2{font-size:36px;background:linear-gradient(90deg,#1976d2,#42a5f5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:20px;}
+p{font-size:17px;line-height:1.7}
+.highlight{color:#e65100;font-weight:600}
+
+/* SERVICES */
+.box-section{display:flex;flex-wrap:wrap;gap:20px;}
+.box-card{flex:1 1 calc(33% - 20px);background:white;padding:20px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.15);}
+.box-card h3{margin-top:0;color:#1976d2;}
+.box-card a{font-weight:600;text-decoration:none;color:#1976d2}
+.box-card a:hover{text-decoration:underline}
+
+/* SLIDERS */
+.gallery,.brand-slider,.testimonial-slider{
+display:flex;gap:20px;overflow-x:auto;padding:20px 0;scroll-behavior:smooth;
+}
+.gallery img{
+min-width:300px;height:200px;object-fit:cover;border-radius:16px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+.brand-card,.testimonial{
+min-width:240px;background:white;padding:18px;border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);text-align:center;
+}
+.brand-card img{max-width:120px;height:60px;object-fit:contain}
+.testimonial{font-weight:600}
+
+/* CONTACT */
+.contact-box{background:white;padding:20px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.15);}
+.contact-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:15px;}
+.contact-actions a{
+flex:1 1 calc(33% - 10px);text-align:center;padding:10px 0;
+border-radius:12px;color:white;font-weight:600;text-decoration:none;
+}
+.call{background:#1976d2;}
+.whatsapp{background:#25D366;}
+.map{background:#ff5722;}
+.instagram{background:#C13584;}
+.email{background:#f44336;}
+
+footer{background:#0d47a1;color:white;text-align:center;padding:30px;margin-top:40px;}
+</style>
 </head>
 
 <body>
 
-<!-- ABOUT US -->
-<div class="card">
-  <h2>About Saraswathi Traders</h2>
-  <p>
-    <strong>Saraswathi Traders has been a trusted name in Tittagudi since 2013</strong>,
-    offering premium-quality products for homes, agriculture, and commercial projects.
-    Whether you are building a new home, renovating, or upgrading agricultural infrastructure,
-    we provide genuine products, expert guidance, and reliable after-sales support.
-  </p>
+<div class="lang-toggle">
+<button class="active" onclick="setLang('en')">EN</button>
+<button onclick="setLang('ta')">TA</button>
 </div>
 
-<!-- PAINT SOLUTIONS -->
-<div class="card">
-  <h2>Paint Solutions</h2>
-  <p>
-    <a href="asian-paints.html" style="color:#ff6f00;font-weight:bold;text-decoration:none;">
-      Authorized Asian Paints dealer with Easy Colour & Colour Cube options.
-    </a>
-  </p>
+<header>
+<h1 class="en">Saraswathi Traders</h1>
+<h1 class="ta" style="display:none">சரஸ்வதி ட்ரேடர்ஸ்</h1>
+<p class="en">Electricals & Hardwares</p>
+<p class="ta" style="display:none">மின் பொருட்கள் & ஹார்ட்வேர்</p>
+<div class="badge">Serving Since 2013</div>
+</header>
+
+<!-- ABOUT US -->
+<div class="container">
+<h2 class="en">About Us</h2>
+<h2 class="ta" style="display:none">எங்களை பற்றி</h2>
+
+<p class="en"><strong class="highlight">Saraswathi Traders</strong> has been a trusted name in Tittagudi since 2013, offering premium-quality products for homes, agriculture, and commercial projects.</p>
+<p class="ta" style="display:none"><strong class="highlight">சரஸ்வதி ட்ரேடர்ஸ்</strong> 2013 முதல் திட்டகுடியில் வீடுகள், விவசாயம் மற்றும் வணிக தேவைகளுக்கான உயர்தர பொருட்களை வழங்கி வருகிறது.</p>
+
+<p class="en">Whether you are building a new home, renovating, or upgrading agricultural infrastructure, we provide genuine products, expert guidance, and reliable after-sales support.</p>
+<p class="ta" style="display:none">புதிய வீடு கட்டுதல், புதுப்பித்தல் அல்லது விவசாய வசதிகளை மேம்படுத்துதல் ஆகிய அனைத்திற்கும் நாங்கள் நம்பகமான பொருட்கள் மற்றும் சிறந்த சேவையை வழங்குகிறோம்.</p>
 </div>
+
+<!-- SERVICES -->
+<div class="container">
+<div class="box-section">
+
+<div class="box-card">
+<h3 class="en">Motors & Pumps</h3>
+<p class="en">High-quality Taro Pumps for homes and agriculture.</p>
+<a href="https://www.taropumps.com/locations/tamilnadu/cuddalore/saraswathitraders" target="_blank">Visit Taro Pumps Location</a><br>
+<a href="https://www.taropumps.com/news/saraswathi-traders-launch" target="_blank">Read Launch News</a>
+</div>
+
+<div class="box-card">
+<h3 class="en">Paint Solutions</h3>
+<p class="en"><a href="asian-paints.html">Authorized Asian Paints dealer with Easy Colour & Colour Cube options.</a></p>
+</div>
+
+<div class="box-card">
+<h3 class="en">Electricals</h3>
+<p class="en">Philips, GM, Legrand lighting and switches.</p>
+</div>
+
+<div class="box-card">
+<h3 class="en">Plumbing</h3>
+<p class="en">Ashirvad & Bandham HDPE pipes for reliable plumbing solutions.</p>
+</div>
+
+<div class="box-card">
+<h3 class="en">Wires & Cables</h3>
+<p class="en">Finolex high-quality wires for safe electrical connections.</p>
+</div>
+
+</div>
+</div>
+
+<!-- GALLERY -->
+<div class="container">
+<h2 class="en">Gallery</h2>
+<div class="gallery" id="gallery">
+<img src="taro-pumps-saraswathi-traders-launch-1.jpg">
+<img src="taro-pumps-saraswathi-traders-launch-2.jpg">
+<img src="taro-pumps-saraswathi-traders-launch-3.jpg">
+<img src="motor1.jpeg">
+<img src="motor2.jpeg">
+<img src="asainshowroom.jpeg">
+</div>
+</div>
+
+<!-- BRANDS -->
+<div class="container">
+<h2 class="en">Our Products & Trusted Brands</h2>
+<div class="brand-slider" id="brands">
+<div class="brand-card"><img src="asain-paints-logo.png"><p>Asian Paints</p></div>
+<div class="brand-card"><img src="taro-logo.png"><p>Taro Pumps</p></div>
+<div class="brand-card"><img src="philips-logo.png"><p>Philips</p></div>
+<div class="brand-card"><img src="finolex-logo.png"><p>Finolex</p></div>
+<div class="brand-card"><img src="gm-logo.png"><p>GM Modular</p></div>
+<div class="brand-card"><img src="legrand-logo.png"><p>Legrand</p></div>
+<div class="brand-card"><img src="ashirvad-logo.png"><p>Ashirvad Pipes</p></div>
+<div class="brand-card"><img src="bandham-logo.png"><p>Bandham Pipes</p></div>
+</div>
+</div>
+
+<!-- TESTIMONIALS -->
+<div class="container">
+<h2 class="en">Customer Testimonials</h2>
+<div class="testimonial-slider" id="testimonials">
+<div class="testimonial">⭐️⭐️⭐️⭐️⭐️ Best place for Taro motors and pumps.</div>
+<div class="testimonial">⭐️⭐️⭐️⭐️⭐️ Asian Paints Colour Cube helped us choose perfect colours.</div>
+<div class="testimonial">⭐️⭐️⭐️⭐️⭐️ Genuine electrical and plumbing products.</div>
+<div class="testimonial">⭐️⭐️⭐️⭐️⭐️ Trusted shop in Tittagudi.</div>
+</div>
+</div>
+
+<!-- CONTACT -->
+<div class="container">
+<h2 class="en">Contact Us</h2>
+<div class="contact-box">
+<p><strong>Saraswathi Traders</strong><br>94, Main Road, Vasistapuram,<br>Tittagudi – 606106</p>
+<p><strong>Phone:</strong> +91 9940625711</p>
+
+<div class="contact-actions">
+<a href="tel:+919940625711" class="call">📞 Call</a>
+<a href="https://wa.me/919940625711" class="whatsapp">💬 WhatsApp</a>
+<a href="https://maps.google.com/?q=Saraswathi+Traders+Tittagudi" class="map">🗺️ Map</a>
+<a href="https://instagram.com/saraswathitraders" class="instagram">📸 Instagram</a>
+<a href="mailto:saraswathitraders@gmail.com" class="email">✉️ Email</a>
+</div>
+
+<div style="margin-top:20px;border-radius:16px;overflow:hidden;">
+<iframe src="https://www.google.com/maps?q=Saraswathi+Traders+Tittagudi&output=embed"
+width="100%" height="300" style="border:0;"></iframe>
+</div>
+</div>
+</div>
+
+<footer>© 2025 Saraswathi Traders | Since 2013</footer>
+
+<script>
+function setLang(lang){
+document.querySelectorAll('.en').forEach(e=>e.style.display=lang==='en'?'block':'none');
+document.querySelectorAll('.ta').forEach(e=>e.style.display=lang==='ta'?'block':'none');
+document.querySelectorAll('.lang-toggle button').forEach(b=>b.classList.remove('active'));
+document.querySelector(`.lang-toggle button[onclick="setLang('${lang}')"]`).classList.add('active');
+}
+
+function autoSlide(id){
+const el=document.getElementById(id);
+let pause=false;
+['wheel','mousedown','touchstart'].forEach(e=>el.addEventListener(e,()=>pause=true));
+setInterval(()=>{
+if(!pause){
+el.scrollLeft+=320;
+if(el.scrollLeft+el.clientWidth>=el.scrollWidth){el.scrollLeft=0;}
+}
+},3000);
+}
+
+autoSlide('gallery');
+autoSlide('brands');
+autoSlide('testimonials');
+</script>
 
 </body>
 </html>
