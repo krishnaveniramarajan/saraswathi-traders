@@ -37,14 +37,12 @@ h2{font-size:36px;background:linear-gradient(90deg,#1976d2,#42a5f5);-webkit-back
 p{font-size:17px;line-height:1.7}
 .highlight{color:#e65100;font-weight:600}
 
-/* SERVICES */
 .box-section{display:flex;flex-wrap:wrap;gap:20px;}
 .box-card{flex:1 1 calc(33% - 20px);background:white;padding:20px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.15);}
 .box-card h3{margin-top:0;color:#1976d2;}
 .box-card a{font-weight:600;text-decoration:none;color:#1976d2}
 .box-card a:hover{text-decoration:underline}
 
-/* SLIDERS */
 .gallery,.brand-slider,.testimonial-slider{
 display:flex;gap:20px;overflow-x:auto;padding:20px 0;scroll-behavior:smooth;
 }
@@ -59,7 +57,6 @@ box-shadow:0 10px 25px rgba(0,0,0,.15);text-align:center;
 .brand-card img{max-width:120px;height:60px;object-fit:contain}
 .testimonial{font-weight:600}
 
-/* CONTACT */
 .contact-box{background:white;padding:20px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.15);}
 .contact-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:15px;}
 .contact-actions a{
@@ -73,6 +70,21 @@ border-radius:12px;color:white;font-weight:600;text-decoration:none;
 .email{background:#f44336;}
 
 footer{background:#0d47a1;color:white;text-align:center;padding:30px;margin-top:40px;}
+
+/* FLOATING WHATSAPP – ADDED */
+.floating-whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:14px 18px;
+border-radius:50px;
+font-weight:600;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+z-index:999;
+}
 </style>
 </head>
 
@@ -80,7 +92,7 @@ footer{background:#0d47a1;color:white;text-align:center;padding:30px;margin-top:
 
 <div class="lang-toggle">
 <button class="active" onclick="setLang('en')">EN</button>
-<button onclick="setLang('ta')">TA</button>
+<button onclick="setLang('ta')">தமிழில் தொடர படிக்க</button>
 </div>
 
 <header>
@@ -109,29 +121,39 @@ footer{background:#0d47a1;color:white;text-align:center;padding:30px;margin-top:
 
 <div class="box-card">
 <h3 class="en">Motors & Pumps</h3>
+<h3 class="ta" style="display:none">மோட்டார்கள் & பம்புகள்</h3>
 <p class="en">High-quality Taro Pumps for homes and agriculture.</p>
+<p class="ta" style="display:none">வீடுகள் மற்றும் விவசாயத்திற்கான உயர்தர டாரோ பம்புகள்.</p>
 <a href="https://www.taropumps.com/locations/tamilnadu/cuddalore/saraswathitraders" target="_blank">Visit Taro Pumps Location</a><br>
 <a href="https://www.taropumps.com/news/saraswathi-traders-launch" target="_blank">Read Launch News</a>
 </div>
 
 <div class="box-card">
 <h3 class="en">Paint Solutions</h3>
+<h3 class="ta" style="display:none">பெயிண்ட் தீர்வுகள்</h3>
 <p class="en"><a href="asian-paints.html">Authorized Asian Paints dealer with Easy Colour & Colour Cube options.</a></p>
+<p class="ta" style="display:none">ஈசி கலர் மற்றும் கலர் க்யூப் வசதிகளுடன் அங்கீகாரம் பெற்ற ஏஷியன் பெயிண்ட்ஸ் விற்பனையாளர்.</p>
 </div>
 
 <div class="box-card">
 <h3 class="en">Electricals</h3>
+<h3 class="ta" style="display:none">மின் பொருட்கள்</h3>
 <p class="en">Philips, GM, Legrand lighting and switches.</p>
+<p class="ta" style="display:none">பிலிப்ஸ், ஜிஎம், லெக்ராண்ட் லைட்கள் மற்றும் ஸ்விட்ச்கள்.</p>
 </div>
 
 <div class="box-card">
 <h3 class="en">Plumbing</h3>
+<h3 class="ta" style="display:none">பிளம்பிங்</h3>
 <p class="en">Ashirvad & Bandham HDPE pipes for reliable plumbing solutions.</p>
+<p class="ta" style="display:none">நம்பகமான பிளம்பிங் தீர்வுகளுக்கான ஆசிர்வாத் & பந்தம் HDPE குழாய்கள்.</p>
 </div>
 
 <div class="box-card">
 <h3 class="en">Wires & Cables</h3>
+<h3 class="ta" style="display:none">வயர்கள் & கேபிள்கள்</h3>
 <p class="en">Finolex high-quality wires for safe electrical connections.</p>
+<p class="ta" style="display:none">பாதுகாப்பான மின் இணைப்புகளுக்கான ஃபினோலெக்ஸ் வயர்கள்.</p>
 </div>
 
 </div>
@@ -140,6 +162,7 @@ footer{background:#0d47a1;color:white;text-align:center;padding:30px;margin-top:
 <!-- GALLERY -->
 <div class="container">
 <h2 class="en">Gallery</h2>
+<h2 class="ta" style="display:none">படங்கள்</h2>
 <div class="gallery" id="gallery">
 <img src="taro-pumps-saraswathi-traders-launch-1.jpg">
 <img src="taro-pumps-saraswathi-traders-launch-2.jpg">
@@ -153,6 +176,7 @@ footer{background:#0d47a1;color:white;text-align:center;padding:30px;margin-top:
 <!-- BRANDS -->
 <div class="container">
 <h2 class="en">Our Products & Trusted Brands</h2>
+<h2 class="ta" style="display:none">எங்கள் தயாரிப்புகள் & நம்பகமான பிராண்டுகள்</h2>
 <div class="brand-slider" id="brands">
 <div class="brand-card"><img src="asain-paints-logo.png"><p>Asian Paints</p></div>
 <div class="brand-card"><img src="taro-logo.png"><p>Taro Pumps</p></div>
@@ -168,6 +192,7 @@ footer{background:#0d47a1;color:white;text-align:center;padding:30px;margin-top:
 <!-- TESTIMONIALS -->
 <div class="container">
 <h2 class="en">Customer Testimonials</h2>
+<h2 class="ta" style="display:none">வாடிக்கையாளர் கருத்துகள்</h2>
 <div class="testimonial-slider" id="testimonials">
 <div class="testimonial">⭐️⭐️⭐️⭐️⭐️ Best place for Taro motors and pumps.</div>
 <div class="testimonial">⭐️⭐️⭐️⭐️⭐️ Asian Paints Colour Cube helped us choose perfect colours.</div>
@@ -179,13 +204,14 @@ footer{background:#0d47a1;color:white;text-align:center;padding:30px;margin-top:
 <!-- CONTACT -->
 <div class="container">
 <h2 class="en">Contact Us</h2>
+<h2 class="ta" style="display:none">தொடர்பு கொள்ள</h2>
 <div class="contact-box">
 <p><strong>Saraswathi Traders</strong><br>94, Main Road, Vasistapuram,<br>Tittagudi – 606106</p>
 <p><strong>Phone:</strong> +91 9940625711</p>
 
 <div class="contact-actions">
 <a href="tel:+919940625711" class="call">📞 Call</a>
-<a href="https://wa.me/919940625711" class="whatsapp">💬 WhatsApp</a>
+<a href="https://wa.me/919940625711?text=hello%20sarasawathi%20traders%20i%20would%20like%20to%20know%20more%20abt%20your%20products" class="whatsapp">💬 WhatsApp</a>
 <a href="https://maps.google.com/?q=Saraswathi+Traders+Tittagudi" class="map">🗺️ Map</a>
 <a href="https://instagram.com/saraswathitraders" class="instagram">📸 Instagram</a>
 <a href="mailto:saraswathitraders@gmail.com" class="email">✉️ Email</a>
@@ -199,6 +225,11 @@ width="100%" height="300" style="border:0;"></iframe>
 </div>
 
 <footer>© 2025 Saraswathi Traders | Since 2013</footer>
+
+<a class="floating-whatsapp"
+href="https://wa.me/919940625711?text=hello%20sarasawathi%20traders%20i%20would%20like%20to%20know%20more%20abt%20your%20products">
+💬 WhatsApp
+</a>
 
 <script>
 function setLang(lang){
